@@ -2,11 +2,14 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #000;
 }
 article,
 aside,
@@ -66,7 +69,6 @@ h1 {
 }
 mark {
   background-color: #ff0;
-  color: #000;
 }
 small {
   font-size: 80%;
@@ -199,7 +201,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #fff;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -208,6 +210,13 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  height: 100%;
+}
+#___gatsby {
+  height: 100%;
+}
+div[role="group"][tabindex] {
+  height: 100%;
 }
 img {
   max-width: 100%;
@@ -619,4 +628,19 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+#center-parent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#the-text {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
