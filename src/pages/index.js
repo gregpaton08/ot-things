@@ -1,4 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
+
+import "../components/layout.css"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -69,9 +72,12 @@ class IndexPage extends React.Component {
     // this.beep()
 
     return (
-      <div id="center-parent" style={this.createStyle()}>
-        <div id="the-text" onClick={this.toggle.bind(this)}>
-          <h1>{this.state.currentText}</h1>
+      <div>
+        {/* <Link to="/page-2/">Go to page 2</Link> */}
+        <div id="center-parent" style={this.createStyle()}>
+          <div id="the-text" onClick={this.toggle.bind(this)}>
+            <h1>{this.state.currentText}</h1>
+          </div>
         </div>
       </div>
     );
