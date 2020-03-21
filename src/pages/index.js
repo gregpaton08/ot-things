@@ -1,9 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -50,8 +45,14 @@ class IndexPage extends React.Component {
 
   render() {
     this.beep()
+
+    const style = {
+      top: `${Math.random() * 80 + 10}%`,
+      left: `${Math.random() * 80 + 10}%`
+    }
+
     return (
-      <div id="center-parent">
+      <div id="center-parent" style={style}>
         <div id="the-text" onClick={this.toggle.bind(this)}>
           <h1>{this.state.currentText}</h1>
         </div>
