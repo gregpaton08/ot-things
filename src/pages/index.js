@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
     }
 
     // Add digits 0 through 9 to the display values.
-    for (let digit = 0; digit <= 10; ++digit) {
+    for (let digit = 0; digit < 10; ++digit) {
       this.displayValues.push(digit.toString())
     }
 
